@@ -1,0 +1,210 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #F5EFDF;
+  --main-font: Helvetica, Arial, sans-sefif;
+  --main-content-margin: 110px;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+}
+
+
+.circular-headshot img {
+    width: 50%; 
+    border-radius: 50%;
+    min-width: 200px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    grid-area: right;
+    margin: 100px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#main {
+  text-align: center; 
+  line-height: 1.5;
+  font-size: large;
+  grid-area: left;
+  margin-top: 130px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+@media (max-width: 1200px) {
+  #main {
+    text-align: center; 
+    line-height: 1.5;
+    font-size: large;
+    grid-area: left;
+    margin-top: var(--main-content-margin);
+    margin-left: 30px;
+    margin-right: 1px;
+  }
+}
+
+h1 {
+  font-size: 60px;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+h2:hover {
+  transform: scale(1.05);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+      "left right";
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 60px;
+}
+
+
+.grid2 {
+  display: grid;
+  grid-template-areas:
+      "left middle right";
+  grid-template-columns: 3fr 3fr 2fr;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
+#section1{
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+#section2{
+  grid-area: middle;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sidebar{
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+}
+
+#github {
+  width: 30px; 
+  height: auto;
+  margin: 0px 40px;
+  margin-top: 20px;
+}
+
+#linkedin {
+  width: 41px; 
+  height: auto;
+  margin: 0px 40px;
+  margin-top: 20px;
+}
+
+#email {
+  width: fit-content; 
+  align-self: center;
+  margin: 12px 40px;
+  margin-top: 18px;
+}
+
+#github:hover {
+  transform: scale(1.2);
+}
+
+#linkedin:hover {
+  transform: scale(1.2);
+}
+
+.bottom-content {
+  margin-left: 10px;
+  text-align: center; 
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 15px
+}
+
+
+.bottom-left-content {
+  margin-left: 10px;
+}
+
+.bottom-left-content ul {
+  margin-top: 0px;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.job-title{
+  font-size: large;
+  margin-bottom: 1px;
+  margin-top: 16px;
+}
+
+
+.bottom-middle-content {
+  margin-left: 30px;
+  align-self: flex-start;
+}
+
+#footer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#legal-info {
+  font-size: small;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: flex-end; 
+  align-self: flex-end;
+  margin-right: 5px;
+}
